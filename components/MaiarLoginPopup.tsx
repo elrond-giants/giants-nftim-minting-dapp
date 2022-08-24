@@ -26,7 +26,7 @@ export default function MaiarLoginPopup({qrCode, uri, open, setOpen}: PopupProps
                     className="w-60 h-60 mt-6"
                     dangerouslySetInnerHTML={{__html: qrCode}}
                 />
-                <p className="mt-2 text-lg">
+                <p className="mt-2 text-lg text-slate-700">
                     Scan the QR code using Maiar
                 </p>
                 {
@@ -40,7 +40,7 @@ export default function MaiarLoginPopup({qrCode, uri, open, setOpen}: PopupProps
                     </a> : null
                 }
                 <button
-                    className="mt-6 text-gray-600 hover:text-gray-900"
+                    className="px-6 py-3 mt-6 mb-0 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-3.5xl cursor-pointer shadow-soft-md bg-x-25 bg-150 leading-pro text-xs ease-soft-in tracking-tight-soft bg-gradient-to-tl from-gray-900 to-slate-800 hover:scale-102 hover:shadow-soft-xs active:opacity-85"
                     onClick={() => {
                         setOpen(false);
                     }}

@@ -19,5 +19,5 @@ export default function RequiresAuth({children}: { children: any }) {
     if (authenticated) {
         return <>{children}</>
     }
-    return <div>Loading</div>
+    return <><div className="d-flex justify-center"><div className="dot-pulse"></div></div></>
 };

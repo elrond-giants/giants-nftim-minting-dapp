@@ -1,12 +1,14 @@
-import {querySc} from "../apis/queries";
-import {contractAddress} from "../config";
+import { querySc } from '../apis/queries';
+import { contractAddress } from '../config';
 
 export const getTotalTokensLeft = async (): Promise<number> => {
-    const {data: data} = await querySc(
-        contractAddress as string,
-        "getTotalTokensLeft",
-        {outputType: "int"}
-    );
+  const { data: data } = await querySc(contractAddress as string, "getTotalTokensLeft", { outputType: "int" });
 
-    return parseInt(data, 10);
+  return parseInt(data, 10);
+};
+
+export const getCollectionSize = async (): Promise<number> => {
+  const { data: data } = await querySc(contractAddress as string, "getTotalSupply", { outputType: "int" });
+
+  return parseInt(data, 10);
 };
