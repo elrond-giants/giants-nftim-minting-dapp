@@ -1,9 +1,10 @@
-import { useAuth, useTransaction } from '@elrond-giants/erd-react-hooks/dist';
+import { useAuth } from '@elrond-giants/erd-react-hooks/dist';
 import { ITransactionProps } from '@elrond-giants/erd-react-hooks/dist/types';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { contractAddress } from '../../config';
+import { useTransaction } from '../../hooks/useTransaction';
 import { getCollectionSize, getTotalTokensLeft } from '../../utils/contractQueries';
 import { authPath } from '../../utils/routes';
 
@@ -52,9 +53,9 @@ export default function Header() {
   const mintNft = async () => {
     const txData: ITransactionProps = {
       receiver: contractAddress as string,
-      data: "mint@01",
+      data: "mintGiant@01",
       gasLimit: 13_000_000,
-      value: 0.01,
+      value: 0.1,
     };
 
     await makeTransaction(txData);
