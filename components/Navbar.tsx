@@ -85,7 +85,7 @@ export default function Navbar() {
                 <ul className="flex flex-col items-start pl-0 mb-0 list-none lg:flex-row xl:ml-auto">
                   <li className="mt-5 lg:mt-0 mb-2 lg:mb-0">
                     <a
-                      href="https://github.com/Elrond-Giants/giants-nftim-minting-dapp"
+                      href="javascript:;"
                       target="_blank"
                       rel="noreferrer"
                       className="lg:mr-4 font-normal transition-all lg-max:opacity-0 duration-250 ease-soft-in-out text-sm text-slate-700"
@@ -107,7 +107,7 @@ export default function Navbar() {
                 <ul className="flex flex-col items-start pl-0 mb-0 list-none lg:flex-row">
                   <li>
                     <a
-                      href="https://www.creative-tim.com/product/soft-ui-dashboard-tailwind"
+                      href="https://github.com/Elrond-Giants/giants-nftim-minting-dapp"
                       target="_blank"
                       rel="noreferrer"
                       className="leading-pro mb-2 ml-1 lg:ml-0 lg:mb-0 hover:scale-102 hover:shadow-soft-xs active:opacity-85 ease-soft-in text-xs tracking-tight-soft bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800 rounded-3.5xl mb-0 mr-1 inline-block cursor-pointer border-0 bg-transparent px-8 py-2 text-center align-middle font-bold uppercase text-white transition-all"
