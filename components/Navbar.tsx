@@ -85,7 +85,7 @@ export default function Navbar() {
                 <ul className="flex flex-col items-start pl-0 mb-0 list-none lg:flex-row xl:ml-auto">
                   <li className="mt-5 lg:mt-0 mb-2 lg:mb-0">
                     <a
-                      href="javascript:;"
+                      href="https://github.com/Elrond-Giants/giants-nftim-minting-dapp"
                       target="_blank"
                       rel="noreferrer"
                       className="lg:mr-4 font-normal transition-all lg-max:opacity-0 duration-250 ease-soft-in-out text-sm text-slate-700"
