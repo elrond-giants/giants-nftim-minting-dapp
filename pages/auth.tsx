@@ -1,16 +1,17 @@
-import type {NextPage} from 'next'
-import {useEffect, useState} from "react";
-import {homePath} from "../utils/routes";
-import {useRouter} from "next/router";
-import MaiarLoginPopup from "../components/MaiarLoginPopup";
-import {useAuth} from "@elrond-giants/erd-react-hooks";
-import {AuthProviderType} from "@elrond-giants/erdjs-auth/dist/types";
-import * as config from "../config";
-// @ts-ignore
+import { useAuth } from '@elrond-giants/erd-react-hooks';
+import { AuthProviderType } from '@elrond-giants/erdjs-auth/dist/types';
+import { useRouter } from 'next/router';
 import QRCode from 'qrcode';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import { useEffect, useState } from 'react';
 
+import Footer from '../components/Footer';
+import MaiarLoginPopup from '../components/MaiarLoginPopup';
+import Navbar from '../components/Navbar';
+import * as config from '../config';
+import { homePath } from '../utils/routes';
+
+import type {NextPage} from 'next'
+// @ts-ignore
 
 const Auth: NextPage = () => {
     const {authenticated, login, getLedgerAccounts} = useAuth();
@@ -129,7 +130,7 @@ const Auth: NextPage = () => {
                                     </div>
                                     <div className="p-6 px-1 pt-0 text-center bg-transparent border-t-0 border-t-solid rounded-b-2xl lg:px-2">
                                     <p className="mx-auto mb-6 leading-normal text-sm text-slate-700">
-                                        Don't have an Elrond wallet?
+                                        Don&apos;t have an Elrond wallet?
                                         <a
                                         href="https://wallet.elrond.com/"
                                         target="_blank"

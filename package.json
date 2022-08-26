@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@types/node": "17.0.18",
+    "@types/qrcode": "^1.5.0",
     "@types/react": "17.0.39",
     "autoprefixer": "^10.4.2",
     "eslint": "8.9.0",
