@@ -4,14 +4,17 @@
 
 Made by [Giants](https://elrondgiants.com) & [Creative Tim](https://www.creative-tim.com/)
 
-This is a dapp template based on [Next.js](https://nextjs.org/)
+**[Live Demo](https://example.com)**
+
+This is a dApp template based on [Next.js](https://nextjs.org/)
 and [erd-next-starter](https://github.com/Elrond-Giants/erd-next-starter).
+The Minting Smart contract used in the live demo is [elven-nft-minter-sc](https://github.com/ElvenTools/elven-nft-minter-sc) by [Julian](https://twitter.com/JulianCwirko).
 
 It offers authentication with Maiar App, Web Wallet, Extension, and Ledger. It also includes methods to easily sign and
 make
 transactions, query smart contracts, and a few utility methods.
 
-This template can be used as a starting point for any minting dApp template. It also comes with the most common sections like:
+This template can be used as a starting point for any minting dApp. It comes with the most common sections like:
 
 - Header
 - About us
@@ -22,6 +25,12 @@ This template can be used as a starting point for any minting dApp template. It 
 
 ## Getting Started
 
+#### Clone repository
+
+```bash
+git clone https://github.com/Elrond-Giants/giants-nftim-minting-dapp.git
+```
+
 #### Install the dependencies
 
 ```bash
@@ -31,9 +40,9 @@ npm install
 #### Set the .env file
 
 We have included the .env.development and .env.production files, which contain just elrond-specific environment
-variables. If you don't use a smart contract you don't need to do anything.
+variables.
 
-If you need to interact with a smart contract, create your .env file and set the `NEXT_PUBLIC_CONTRACT_ADDRESS`
+To interact with a minting smart contract, create your .env file and set the `NEXT_PUBLIC_CONTRACT_ADDRESS`
 variable.
 
 #### Launch and explore
@@ -72,6 +81,8 @@ await makeTransaction({
 ```
 
 #### Make query
+
+To read data from the Smart Contract, like total number of NFTs, the price per NFT, etc, you can use a query.
 
 ```typescript
 export const getTotalTokensLeft = async (): Promise<number> => {

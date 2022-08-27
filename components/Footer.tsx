@@ -5,7 +5,18 @@ export default function Footer(props: any) {
         <div className="container mx-auto">
           <div className="flex flex-wrap">
             <div className="w-full px-4 md:w-7/12">
-              <span className="mb-4 block text-lg font-bold pl-6 text-slate-700">Elrond Giants</span>
+              <span className="mb-4 block text-sm pl-6 text-slate-700">
+                Template based on{" "}
+                <a
+                  href="https://github.com/Elrond-Giants/erd-next-starter"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline"
+                >
+                  erd-next-starter
+                </a>
+                .
+              </span>
 
               <div className="py-1 text-sm font-medium pl-6">
                 <p className="mb-0 text-slate-700/60">

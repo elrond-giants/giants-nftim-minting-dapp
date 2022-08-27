@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import { contractAddress } from '../../config';
 import { useTransaction } from '../../hooks/useTransaction';
-import { getCollectionSize, getTotalTokensLeft } from '../../utils/contractQueries';
+import { getCollectionSize, getNftPrice, getTotalTokensLeft } from '../../utils/contractQueries';
 import { authPath } from '../../utils/routes';
 
 export default function Header() {
@@ -16,6 +16,7 @@ export default function Header() {
 
   const [minted, setMinted] = useState(0);
   const [collectionSize, setCollectionSize] = useState(0);
+  const [nftPrice, setNftPrice] = useState(0);
 
   const images = [
     {
@@ -44,6 +45,8 @@ export default function Header() {
     (async () => {
       const tokensLeft = await getTotalTokensLeft();
       const collectionSize = await getCollectionSize();
+      const nftPrice = await getNftPrice();
+      setNftPrice(nftPrice);
       const minted = collectionSize - tokensLeft;
       setMinted(minted);
       setCollectionSize(collectionSize);
@@ -128,7 +131,7 @@ export default function Header() {
 
                         <div className="text-slate-700 md:text-white flex">
                           <div className="mr-2">
-                            Price: <strong>0.01 EGLD</strong>
+                            Price: <strong>{nftPrice} EGLD</strong>
                           </div>{" "}
                           |
                           <div className="ml-2">
