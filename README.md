@@ -4,7 +4,7 @@
 
 Made by [Giants](https://elrondgiants.com) & [NF-Tim](https://nf-tim.creative-tim.com/) by [Creative Tim](https://www.creative-tim.com/)
 
-**[Live Demo](https://example.com)**
+**[Live Demo](https://mint-demo.elrondgiants.com/)**
 
 This is a dApp template based on [erd-next-starter](https://github.com/Elrond-Giants/erd-next-starter) by [Giants](https://elrondgiants.com) & [soft-ui-dashboard-tailwind](https://github.com/creativetimofficial/soft-ui-dashboard-tailwind) by [Creative Tim](https://www.creative-tim.com/).
 The Minting Smart contract used in the live demo is [elven-nft-minter-sc](https://github.com/ElvenTools/elven-nft-minter-sc) by [Julian](https://twitter.com/JulianCwirko).
