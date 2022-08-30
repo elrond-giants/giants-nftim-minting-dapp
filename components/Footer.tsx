@@ -14,6 +14,14 @@ export default function Footer(props: any) {
                   className="underline"
                 >
                   erd-next-starter
+                </a>{" "}
+                &{" "}
+                <a
+                  href="https://github.com/creativetimofficial/soft-ui-dashboard-tailwind"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  soft-ui-dashboard-tailwind
                 </a>
                 .
               </span>

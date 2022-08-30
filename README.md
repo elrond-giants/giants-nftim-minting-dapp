@@ -2,12 +2,11 @@
 
 <img src=https://giants.fra1.cdn.digitaloceanspaces.com/minting-dapp-template.jpeg  width="550px" alt="elrond minting dapp template banner"/>
 
-Made by [Giants](https://elrondgiants.com) & [Creative Tim](https://www.creative-tim.com/)
+Made by [Giants](https://elrondgiants.com) & [NF-Tim](https://nf-tim.creative-tim.com/) by [Creative Tim](https://www.creative-tim.com/)
 
 **[Live Demo](https://example.com)**
 
-This is a dApp template based on [Next.js](https://nextjs.org/)
-and [erd-next-starter](https://github.com/Elrond-Giants/erd-next-starter).
+This is a dApp template based on [erd-next-starter](https://github.com/Elrond-Giants/erd-next-starter) by [Giants](https://elrondgiants.com) & [soft-ui-dashboard-tailwind](https://github.com/creativetimofficial/soft-ui-dashboard-tailwind) by [Creative Tim](https://www.creative-tim.com/).
 The Minting Smart contract used in the live demo is [elven-nft-minter-sc](https://github.com/ElvenTools/elven-nft-minter-sc) by [Julian](https://twitter.com/JulianCwirko).
 
 It offers authentication with Maiar App, Web Wallet, Extension, and Ledger. It also includes methods to easily sign and
@@ -95,3 +94,30 @@ export const getTotalTokensLeft = async (): Promise<number> => {
 ## Deploy
 
 Checkout the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for details.
+
+## Reporting Issues
+
+We use GitHub Issues as the official bug tracker for this template. Here are some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of the template.
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+
+## Resources
+
+- [Live Preview](https://mint-demo.elrondgiants.com/)
+- [License Agreement](https://github.com/Elrond-Giants/giants-nftim-minting-dapp/blob/main/LICENSE)
+- [Open Issues](https://github.com/Elrond-Giants/giants-nftim-minting-dapp/issues)
+- [soft-ui-dashboard-tailwind](https://github.com/creativetimofficial/soft-ui-dashboard-tailwind)
+
+## License
+
+[GPL-3.0 license](https://github.com/Elrond-Giants/giants-nftim-minting-dapp/blob/main/LICENSE)
+
+## Useful Links
+
+- [Giants Website](https://elrondgiants.com/)
+- [Creative Tim Website](https://www.creative-tim.com/)
+- [NF-Tim Website](https://nf-tim.creative-tim.com/)
+- [Giants Twitter](https://twitter.com/ElrondGiants)
+- [NF-Tim Twitter](https://twitter.com/NFTimofficial)
