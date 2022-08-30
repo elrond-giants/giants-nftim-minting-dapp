@@ -20,6 +20,7 @@ export default function Footer(props: any) {
                   href="https://github.com/creativetimofficial/soft-ui-dashboard-tailwind"
                   target="_blank"
                   rel="noreferrer"
+                  className="underline"
                 >
                   soft-ui-dashboard-tailwind
                 </a>
