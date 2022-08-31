@@ -11,6 +11,7 @@ import * as config from '../config';
 import { homePath } from '../utils/routes';
 
 import type {NextPage} from 'next'
+import { isDemo } from '../config';
 // @ts-ignore
 
 const Auth: NextPage = () => {
@@ -140,6 +141,9 @@ const Auth: NextPage = () => {
                                         Create Wallet
                                         </a>
                                     </p>
+                                    {isDemo && <p className="mx-auto mb-6 leading-normal text-sm text-slate-700 font-bold">
+                                        This Demo is running on Devnet
+                                    </p>}
                                     </div>
                                 </div>
                             </div>
