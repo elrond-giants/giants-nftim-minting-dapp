@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
       <ReduxProvider store={store}>
-        <AuthContextProvider env={process.env.NODE_ENV === "production" ? "mainnet" : "devnet"}>
+        <AuthContextProvider env={process.env.NODE_ENV === "production" && !process.env.IS_DEMO ? "mainnet" : "devnet"}>
           <Component {...pageProps} />
           <Notifications />
         </AuthContextProvider>
