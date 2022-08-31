@@ -1,12 +1,12 @@
-import { useAuth } from '@elrond-giants/erd-react-hooks/dist';
-import { ITransactionProps } from '@elrond-giants/erd-react-hooks/dist/types';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useAuth } from "@elrond-giants/erd-react-hooks/dist";
+import { ITransactionProps } from "@elrond-giants/erd-react-hooks/dist/types";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
-import { contractAddress } from '../../config';
-import { useTransaction } from '../../hooks/useTransaction';
-import { getCollectionSize, getNftPrice, getTotalTokensLeft } from '../../utils/contractQueries';
-import { authPath } from '../../utils/routes';
+import { contractAddress, isDemo } from "../../config";
+import { useTransaction } from "../../hooks/useTransaction";
+import { getCollectionSize, getNftPrice, getTotalTokensLeft } from "../../utils/contractQueries";
+import { authPath } from "../../utils/routes";
 
 export default function Header() {
   const { authenticated } = useAuth();
@@ -117,6 +117,11 @@ export default function Header() {
                     </div>
                   </div>
                 </div>
+                {isDemo && (
+                  <p className="mx-auto mb-6 leading-normal text-sm text-slate-700 font-bold mt-2">
+                    This Demo is running on Devnet
+                  </p>
+                )}
               </div>
               <div className="w-full max-w-full ml-auto mr-6 px-3 lg:flex-0 shrink-0 md:w-12/12 xl:w-7/12">
                 <div className="mt-28 mb-10 md:mb-0 relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border overflow-hidden">

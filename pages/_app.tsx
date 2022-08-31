@@ -1,15 +1,15 @@
-import '../styles/globals.css';
-import '../styles/loading-dot.css';
+import "../styles/globals.css";
+import "../styles/loading-dot.css";
 
-import { AuthContextProvider } from '@elrond-giants/erd-react-hooks';
-import { DefaultSeo } from 'next-seo';
-import { AppProps } from 'next/app';
-import Script from 'next/script';
-import { Provider as ReduxProvider } from 'react-redux';
+import { AuthContextProvider } from "@elrond-giants/erd-react-hooks";
+import { DefaultSeo } from "next-seo";
+import { AppProps } from "next/app";
+import Script from "next/script";
+import { Provider as ReduxProvider } from "react-redux";
 
-import Notifications from '../components/Notifications';
-import { isDemo } from '../config';
-import store from '../redux/store';
+import Notifications from "../components/Notifications";
+import { isDemo } from "../config";
+import store from "../redux/store";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
