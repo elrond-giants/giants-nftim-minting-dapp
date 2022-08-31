@@ -1,6 +1,6 @@
 # Minting dApp Template
 
-<img src=https://giants.fra1.cdn.digitaloceanspaces.com/minting-dapp-template.jpeg  width="550px" alt="elrond minting dapp template banner"/>
+<img src=https://giants.fra1.digitaloceanspaces.com/minting-dapp-template.jpg  width="550px" alt="elrond minting dapp template banner"/>
 
 Made by [Giants](https://elrondgiants.com) & [NF-Tim](https://nf-tim.creative-tim.com/) by [Creative Tim](https://www.creative-tim.com/)
 
